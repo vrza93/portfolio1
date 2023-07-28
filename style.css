@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    justify-content: center;
     background-color: rgb(200, 200, 200);
 }
 
@@ -88,4 +89,39 @@ h1 {
     color: red;
     cursor: pointer;
     font-weight: bold;
+}
+
+@media (max-width: 644px) {
+    .empty-space {
+        margin-top: 150px;
+    }
+    .container {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 392px) {
+    .empty-space {
+        margin-top: 300px;
+    }
+    .cat-stretch {
+        display: block;
+    }
+    .cat-h2 {
+        display: block;
+    }
+    .container {
+        display: block;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+@media (orientation: landscape) {
+    body {
+        height: 100vh;
+    }
 }
